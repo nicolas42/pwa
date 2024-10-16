@@ -1,13 +1,15 @@
-This is basically just to get an icon on mobile when the app is added to the home screen.
-It also allows the program to be run as a separate browser instance without a tab bar.
+This is basically just to get an icon on mobile when the website is added to the home screen.
+It also allows the program to be run as a separate browser instance and for more advanced features like push notifications to be used. 
+But that isn't touched on here. 
 
 # Quick Start
 --------------------------------------
 
 go to https://nicolas42.github.io/pwa
 There should be an icon in the url bar that allows the program to be installed. 
+This'll be under a share icon on mobile I believe.  
 
-locally 
+locally
 python3 -m http.server 8000
 http://localhost:8000
 
