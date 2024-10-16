@@ -1,13 +1,13 @@
 {
     "name": "My Simple Web App",
     "short_name": "WebApp",
-    "start_url": "index.html",
+    "start_url": "/pwa/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
     "icons": [
         {
-            "src": "icon-144x144.png",
+            "src": "/pwa/icon-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         }
