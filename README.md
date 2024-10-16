@@ -1,26 +1,32 @@
-<div align="left">
-  <h1 align="left">Simple Progressive Web App (PWA)</h1>
-</div>
+# Quick Start
 
-<p>This is a simple page for a Progressive Web App (PWA)</p>
-<p align="center">
-  <a href="" rel="noopener">
- <img src="img/screenshot-3.jpg" alt="Project logo"></a>
-</p>
+python3 -m http.server 8000
 
----
+go to http://localhost:8080
 
-## About
+There should be an icon in the url bar that allows the program to be "installed".
 
-Displays a simple PWA demo. Implemented here using the program manifest, service workers, and storage. In this version, it is possible to define the first page, the default offline page, and the pages that should not be cached.
-
-## Demo
-
-[https://alirahimi818.github.io/simple-PWA/](https://alirahimi818.github.io/simple-PWA/)
+It may need to be run on an https server to work on a proper server.
 
 
-## َUsage
+# ChatGPT explanation of a Progressive Web App
 
-You can see how to use this package on the Red Cherry site in Persian
-[https://redcherry.ir/?p=603](https://redcherry.ir/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d9%be%db%8c%d8%a7%d8%af%d9%87-%d8%b3%d8%a7%d8%b2%db%8c-%d9%88%d8%a8-%d8%a7%d9%be%d9%84%db%8c%da%a9%db%8c%d8%b4%d9%86-%d9%be%db%8c%d8%b4-%d8%b1%d9%88%d9%86%d8%af%d9%87-p/)
+what is a progressive web app?
+ChatGPT said:
+ChatGPT
+A Progressive Web App (PWA) is a type of web application that offers an app-like experience directly through a web browser. PWAs are designed to be fast, reliable, and engaging, combining the best of websites and mobile apps. Here are the key features:
 
+Installable: Users can add PWAs to their home screen without going through an app store.
+Offline Access: They can work offline or with poor internet connectivity through caching.
+Responsive: They adapt to any screen size (mobile, tablet, desktop).
+Push Notifications: They can send notifications like native apps.
+Secure: PWAs are served over HTTPS, ensuring secure communications.
+They provide a seamless user experience by integrating features traditionally found in native apps.
+
+
+# To Do
+
+Test on a proper server.  Not local host.  
+Test on a mobile phone.
+See if we can change the install link from something that is in the url bar to something else, like a link in the webpage.
+Implement described functionality
