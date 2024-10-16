@@ -39,10 +39,11 @@ Then make a manifest.json file and put this in it.
     }
 
 Change the name and short_name.  Short name seems to be used on mobile icons.
-Change the start_url.  
+Change the start_url.  Change the icon src path.  And that should do it. 
 
-Standalone means it'll run in a separate instance like an app.  It can also be set to browser but I haven't had much luck testing that yet.
-I'm not sure about the effects of background_color and theme_color.  The icon is the icon.  Multiple icons with different sizes can be defined.  
+Multiple icons with different sizes can be defined.  
+Standalone means it'll run in a separate instance like an app.  This can also be set to browser but I haven't had much luck testing that.
+I'm not sure about the effects of background_color and theme_color.  
 
 
 Testing
@@ -52,7 +53,7 @@ Tested on windows and on an iphone using add to home screen.
 
 Discussion of additional features
 ----------------------------------------
-There is a way to add an install button by triggering on an beforeinstallprompt event.
+There is a way to add an install button by triggering on an "beforeinstallprompt" event.
 However this doesn't work in ios so it's a bit pointless.
 There are libraries that claim to offer this kind of functionality with cross platform compatibility
 but I haven't tested them nor do I have much of an idea about their long-term robustness or stability.
