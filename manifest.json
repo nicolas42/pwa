@@ -1,15 +1,13 @@
 {
-    "name": "My Simple Web App",
-    "short_name": "WebApp",
-    "start_url": "/index.html",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#000000",
+  "name": "Sensium Awesome",
+  "short_name": "Sensium Awesome",
     "icons": [
         {
             "src": "icon-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         }
-    ]
+    ],
+  "start_url": "/",
+  "display": "standalone"
 }
