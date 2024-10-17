@@ -2,8 +2,8 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open('my-web-app-cache').then((cache) => {
             return cache.addAll([
-                '/',
-                '/index.html'
+                'https://nicolas42.github.io/pwa/',
+                'https://nicolas42.github.io/pwa/index.html'
             ]);
         })
     );
