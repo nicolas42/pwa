@@ -1,8 +1,18 @@
-self.addEventListener('fetch', event => {
-  let url = new URL(event.request.url);
+self.addEventListener('install', (event) => {
+    event.waitUntil(
+        caches.open('my-web-app-cache').then((cache) => {
+            return cache.addAll([
+                '/',
+                '/index.html'
+            ]);
+        })
+    );
+});
 
-  // Normalize paths so both `/pwa/` and `/pwa/index.html` return the same response
-  if (url.pathname === '/pwa/' || url.pathname === '/pwa/index.html') {
-    event.respondWith(caches.match('/pwa/index.html'));
-  }
+self.addEventListener('fetch', (event) => {
+    event.respondWith(
+        caches.match(event.request).then((response) => {
+            return response || fetch(event.request);
+        })
+    );
 });
